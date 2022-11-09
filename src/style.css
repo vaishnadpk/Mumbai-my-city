@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 .title {
-  border: 2px solid white;
+  border: 2px solid #edcab4;
   border-radius: 30px;
   align-items: center;
   padding: 50px;
@@ -14,13 +14,19 @@ body {
   text-align: center;
   font-size: 18px;
   width: 80%;
+  transition: 200ms all ease-in-out;
 }
-nav {
+nav,
+footer {
   color: white;
   width: auto;
   height: auto;
   background-color: #09415d;
   padding: 10px 70px;
+}
+footer {
+  text-align: center;
+  font-size: 20px;
 }
 .icon-img {
   width: 45px;
@@ -43,6 +49,11 @@ ul {
 ul li {
   margin-left: 15px;
   font-size: 18px;
+}
+.cap {
+  text-transform: uppercase;
+  color: rgb(94, 9, 9);
+  text-decoration: underline;
 }
 section {
   width: 100%;
@@ -72,7 +83,7 @@ section {
   color: white;
 }
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   color: #09415d;
 }
@@ -119,7 +130,7 @@ img {
 #grid {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 0 auto;
@@ -129,8 +140,60 @@ img {
   height: 250px;
   object-fit: cover;
 }
+ol li {
+  padding: 10px;
+  line-height: 1.5rem;
+}
+.shopImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sign {
+  border: 3px solid #09415d;
+  border-radius: 15px;
+  margin: 50px;
+  align-items: center;
+}
+button {
+  display: block;
+  margin: 10px auto 20px;
+  font-size: 16px;
+  padding: 5px 40px;
+
+  border: 3px solid #09415d;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #09415d;
+  background-color: white;
+}
+h2 {
+  text-align: center;
+  padding: 10px 0 0;
+  color: #09415d;
+  transition: 200ms all ease-in-out;
+}
 @media only screen and (max-width: 850px) {
   #grid {
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .title {
+    width: 70%;
+    max-width: 400px;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .title {
+    width: 70%;
+    max-width: 200px;
+    left: 20%;
   }
 }
