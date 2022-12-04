@@ -220,7 +220,8 @@ h3 {
   .title {
     width: 70%;
     max-width: 200px;
-    left: 20%;
-    top: 35%;
+    padding: 30px;
+    left: 25%;
+    top: 40%;
   }
 }
