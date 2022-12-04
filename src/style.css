@@ -192,6 +192,19 @@ h3 {
   }
 }
 @media only screen and (max-width: 750px) {
+  .nav-head {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  ul li {
+    margin: 0 20px;
+  }
+  #top-sign {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+  }
   .title {
     width: 70%;
     max-width: 400px;
@@ -207,5 +220,6 @@ h3 {
     width: 70%;
     max-width: 200px;
     left: 20%;
+    top: 35%;
   }
 }
